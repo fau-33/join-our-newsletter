@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9fafb;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  padding: 40px 20px;
+}
+
+header {
+  margin-bottom: 40px;
+}
