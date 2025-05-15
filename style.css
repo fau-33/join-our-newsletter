@@ -1,3 +1,4 @@
+/* Estilos Gerais */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,5 +16,131 @@ body {
 }
 
 header {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+header img {
+  width: 100px;
+  max-width: 500px;
+}
+
+.newsletter-section {
+  text-align: center;
+  padding: 40px;
+}
+
+.newsletter-section h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.newsletter-section h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.newsletter-section form {
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.03),
+    0px 8px 12px 0px rgba(0, 0, 0, 0.08);
+}
+
+.newsletter-section form input[type="text"] {
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  background-color: #f9fafb;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.newsletter-section form button {
+  background-color: #284bce;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-section form p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+/* Responsividade para Tablets */
+@media (max-width: 768px) {
+  .newsletter-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .newsletter-section h3 {
+    font-size: 1rem;
+    margin-bottom: 50px;
+  }
+
+  .newsletter-section form {
+    padding: 30px;
+  }
+
+  .newsletter-section form input[type="text"] {
+    font-size: 0.9rem;
+  }
+
+  .newsletter-section form button {
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsividade para Mobile */
+@media (max-width: 480px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  header img {
+    width: 80px;
+  }
+
+  .newsletter-section {
+    padding: 20px;
+  }
+
+  .newsletter-section h1 {
+    font-size: 2rem;
+  }
+
+  .newsletter-section h3 {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+  }
+
+  .newsletter-section form {
+    padding: 20px;
+  }
+
+  .newsletter-section form input[type="text"] {
+    font-size: 0.8rem;
+  }
+
+  .newsletter-section form button {
+    font-size: 0.8rem;
+  }
+
+  .newsletter-section form p {
+    font-size: 0.75rem;
+  }
 }
